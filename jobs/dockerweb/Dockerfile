@@ -1,8 +1,6 @@
 FROM php:7.4-buster
 LABEL maintainer="Ludwin"
 
-RUN a2enmod rewrite
-
 RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     libicu-dev \
