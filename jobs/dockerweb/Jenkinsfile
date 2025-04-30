@@ -15,7 +15,7 @@ pipeline {
         stage('stop/rm') {
             when {
                 expression {
-                    def DOCKER_EXIST = sh(returnStdout: true, script: 'echo "docker ps -q --filter name=${name_final}"').trim()
+                    def DOCKER_EXIST = sh(returnStdout: true, script: 'docker ps -q --filter name=${name_final}').trim()
                     return DOCKER_EXIST != ''
                 }
             }
