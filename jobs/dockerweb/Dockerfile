@@ -1,4 +1,4 @@
-FROM php:7.1.17-apache
+FROM php:7.4-buster
 LABEL maintainer="Ludwin"
 
 RUN a2enmod rewrite
