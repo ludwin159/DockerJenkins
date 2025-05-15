@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'main' }
+    agent any
     parameters {
         string(name: 'name_container', defaultValue: 'proyecto-qa', description: 'nombre del docker')
         string(name: 'name_image', defaultValue: 'iproyecto-qa', description: 'nombre de la imagen')
